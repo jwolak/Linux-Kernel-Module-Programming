@@ -1,0 +1,5 @@
+sudo insmod driver_class_create_read_write.ko
+ls -l /dev/mydevice
+echo hello > /dev/mydevice
+cat /dev/mydevice
+dmesg | tail -n 30
